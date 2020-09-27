@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <springboot-version>2.3.4</springboot-version>
+        <springboot-version>2.3.4.RELEASE</springboot-version>
         <java.version>1.8</java.version>
+        <jcl.over.slf4j.version>1.7.30</jcl.over.slf4j.version>
     </properties>
     <modules>
         <module>ssk-eureka8001</module>
@@ -23,11 +24,25 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${springboot-version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${springboot-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${jcl.over.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.16</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.2.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
