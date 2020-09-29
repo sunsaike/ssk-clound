@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class PaymentController {
     @GetMapping("/paymentbyid/{id}")
-    public String getPaymentByid(@PathVariable("id") String id){
-        log.debug("@@@@@«Î«ÛgetPaymentByid£¨id="+id);
+    public String getPaymentByid(@PathVoariable("id") String id){
+        log.info("@@@@ getPaymentByid id="+id);
         return "ID="+id+"SUCCCS";
     }
 }
