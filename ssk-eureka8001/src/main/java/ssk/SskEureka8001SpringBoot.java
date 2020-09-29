@@ -7,6 +7,6 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class SskEureka8001SpringBoot {
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new SpringApplication().run(SskEureka8001SpringBoot.class,args);
+        SpringApplication.run(SskEureka8001SpringBoot.class,args);
     }
 }
