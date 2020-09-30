@@ -5,10 +5,13 @@ spring:
     name: eureka-server7002
 eureka:
   instance:
-    hostname: localhost
+    hostname: eurekaserver7002 #host文件配置映射
   client:
     fetch-registry: false
-    register-with-eureka: false
+    register-with-eureka: true
     service-url:
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
+       defaultZone: http://eurekaserver7001:7001/eureka/
+  server:
+    enable-self-preservation: false #关闭自我保护模式
+    eviction-interval-timer-in-ms: 4000 #清理服务间隔4s，默认60*10000
