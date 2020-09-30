@@ -2,7 +2,7 @@ server:
   port: 7001
 spring:
   application:
-    name: eurekaserver-7001
+    name: eurekaserver
 eureka:
   instance:
     hostname: eurekaserver7001 #host文件配置映射
