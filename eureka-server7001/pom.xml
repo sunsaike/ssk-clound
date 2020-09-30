@@ -9,11 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>eureka-server7001</artifactId>
     <packaging>jar</packaging>
 
-    <artifactId>ssk-eureka8001</artifactId>
-
     <dependencies>
+        <!-- eureka server -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -26,7 +30,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
@@ -39,5 +42,7 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
         </dependency>
+
     </dependencies>
+
 </project>

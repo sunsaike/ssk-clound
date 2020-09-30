@@ -2,10 +2,12 @@ package ssk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-public class SskEureka8001SpringBoot {
+@EnableEurekaServer
+public class EurekaServer7001Boot {
     public static void main(String[] args) {
-        SpringApplication.run(SskEureka8001SpringBoot.class,args);
+        SpringApplication.run(EurekaServer7001Boot.class,args);
     }
 }
