@@ -11,3 +11,7 @@ eureka:
 #    register-with-eureka: false
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
+# 安全认证的配置
+security:
+  basic:
+    enabled: true
