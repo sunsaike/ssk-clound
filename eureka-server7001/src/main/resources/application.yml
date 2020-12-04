@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: eurekaserver
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/alan_oauth?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=true&autoReconnect=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
 eureka:
   instance:
     hostname: eurekaserver7001 #host文件配置映射
