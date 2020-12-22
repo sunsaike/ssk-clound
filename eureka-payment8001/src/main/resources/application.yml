@@ -24,7 +24,7 @@ security:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: ssk.user.mapper.UserMapper
+  type-aliases-package: ssk.**.mapper.**
 
 #showSql
 logging:
