@@ -1,0 +1,11 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ssk.user.mapper.UserMapper">
+    <select id="getUserByName" resultType="ssk.user.po.User">
+        select * from user where username = #{username}
+    </select>
+    <select id="getRoleById" resultType="ssk.role.po.Role">
+        select * from role where id in (select rid from user_role where uid = #{uid})
+    </select>
+</mapper>
