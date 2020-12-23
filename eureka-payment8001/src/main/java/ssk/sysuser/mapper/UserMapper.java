@@ -1,8 +1,8 @@
-package ssk.user.mapper;
+package ssk.sysuser.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import ssk.role.po.Role;
-import ssk.user.po.User;
+import ssk.sysuser.po.User;
 import java.util.List;
 
 @Mapper

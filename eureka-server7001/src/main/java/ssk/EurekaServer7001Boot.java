@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages="ssk")
 @EnableEurekaServer
 public class EurekaServer7001Boot {
     public static void main(String[] args) {
