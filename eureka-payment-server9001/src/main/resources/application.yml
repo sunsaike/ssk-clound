@@ -1,14 +1,13 @@
 server:
-  port: 8001
+  port: 9001
 spring:
   application:
-    name: payment8001
+    name: paymentserver
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/sskdb?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
     username: ssk
     password: 1415926ssk
-#    driver-class-name: com.mysql.jdbc.Driver
 eureka:
   instance:
     hostname: localhost

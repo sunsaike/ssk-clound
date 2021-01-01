@@ -14,12 +14,12 @@ public class PaymentController {
     @Resource
     private SysUserService sysUserService;
 
-    @GetMapping("/ubyname/{id}")
-    public void loadUserByUsername(@PathVariable("username") String username){
-        sysUserService.loadUserByUsername(username);
-    }
+//    @GetMapping("/ubyname/{id}")
+//    public void loadUserByUsername(@PathVariable("username") String username){
+//        sysUserService.loadUserByUsername(username);
+//    }
 
-    @GetMapping("/allu")
+    @GetMapping("/consume/allu")
     public void loadAllUsers(){
         sysUserService.loadAllUsers();
     }
